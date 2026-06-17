@@ -844,8 +844,8 @@ body.view-control-buttons .viewControlButton {
 }
 
 .splashCard {
-  width: min(920px, 95vw);
-  min-height: 520px;
+  width: 580px;
+  max-width: 90vw;
   background: rgba(255,255,255,0.94);
   border-radius: 28px;
   display: grid;
