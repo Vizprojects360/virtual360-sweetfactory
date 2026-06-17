@@ -840,34 +840,106 @@ body.view-control-buttons .viewControlButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 32px;
 }
 
-.splashBox {
-  text-align: center;
-  color: #fff;
-  padding: 40px;
-  border-radius: 16px;
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(8px);
+.splashCard {
+  width: min(920px, 95vw);
+  min-height: 520px;
+  background: rgba(255,255,255,0.94);
+  border-radius: 28px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
 }
 
-.splashBox h1 {
+.agentPhoto {
+  background: #111;
+}
+
+.agentPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splashContent {
+  padding: 56px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.splashContent h1 {
   font-size: 42px;
-  margin-bottom: 12px;
+  line-height: 1.1;
+  margin-bottom: 18px;
 }
 
-.splashBox p {
+.description {
   font-size: 18px;
-  margin-bottom: 24px;
+  line-height: 1.5;
+  opacity: 0.75;
+  margin-bottom: 28px;
+}
+
+.agentDetails {
+  display: grid;
+  gap: 5px;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.agentDetails strong {
+  font-size: 22px;
+}
+
+.agentDetails span {
+  opacity: 0.75;
 }
 
 #startTour {
+  align-self: flex-start;
   border: none;
-  background: #fff;
-  color: #111;
-  padding: 14px 30px;
+  background: #111;
+  color: #fff;
+  padding: 16px 34px;
   border-radius: 999px;
   font-size: 17px;
   cursor: pointer;
   font-weight: 600;
+}
+
+#startTour:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+  .splashCard {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .agentPhoto {
+    height: 240px;
+  }
+
+  .splashContent {
+    padding: 32px;
+  }
+
+  .splashContent h1 {
+    font-size: 32px;
+  }
 }
