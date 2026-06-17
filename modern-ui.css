@@ -1,1 +1,116 @@
+#titleBar,
+body.multiple-scenes #titleBar,
+body.fullscreen-enabled #titleBar {
+  top: 18px !important;
+  left: 50% !important;
+  right: auto !important;
+  width: auto !important;
+  height: auto !important;
+  transform: translateX(-50%) !important;
+  z-index: 20000 !important;
+}
 
+#titleBar .sceneName {
+  height: auto !important;
+  min-width: 80px !important;
+  padding: 10px 22px !important;
+  line-height: 1 !important;
+  border-radius: 999px !important;
+  background: rgba(18,18,18,0.72) !important;
+  color: #fff !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25) !important;
+}
+
+#sceneListToggle {
+  top: 18px !important;
+  left: 18px !important;
+  width: 46px !important;
+  height: 46px !important;
+  padding: 8px !important;
+  border-radius: 999px !important;
+  background: rgba(18,18,18,0.72) !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25) !important;
+  z-index: 20001 !important;
+}
+
+#sceneList,
+.mobile #sceneList {
+  top: 78px !important;
+  left: 18px !important;
+  width: 180px !important;
+  height: auto !important;
+  padding-top: 0 !important;
+  border-radius: 22px !important;
+  overflow: hidden !important;
+  background: rgba(18,18,18,0.78) !important;
+  box-shadow: 0 20px 55px rgba(0,0,0,0.32) !important;
+  margin-left: -230px !important;
+  z-index: 20000 !important;
+}
+
+#sceneList.enabled,
+.mobile #sceneList.enabled {
+  margin-left: 0 !important;
+}
+
+#sceneList .scenes,
+.mobile #sceneList .scenes {
+  background: transparent !important;
+  padding: 8px !important;
+}
+
+#sceneList .scene,
+.mobile #sceneList .scene {
+  height: 42px !important;
+  border-radius: 14px !important;
+  margin-bottom: 4px !important;
+  background: transparent !important;
+}
+
+#sceneList .scene .text,
+.mobile #sceneList .scene .text {
+  line-height: 42px !important;
+  padding: 0 16px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: rgba(255,255,255,0.78) !important;
+}
+
+#sceneList .scene.current {
+  background: rgba(255,255,255,0.18) !important;
+}
+
+#sceneList .scene.current .text {
+  color: #fff !important;
+}
+
+#autorotateToggle,
+#fullscreenToggle {
+  top: 18px !important;
+  width: 46px !important;
+  height: 46px !important;
+  padding: 8px !important;
+  border-radius: 999px !important;
+  background: rgba(18,18,18,0.72) !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25) !important;
+  z-index: 20001 !important;
+}
+
+#autorotateToggle {
+  right: 18px !important;
+}
+
+#fullscreenToggle {
+  right: 76px !important;
+}
+
+#autorotateToggle .icon,
+#fullscreenToggle .icon,
+#sceneListToggle .icon {
+  width: 30px !important;
+  height: 30px !important;
+  top: 8px !important;
+  right: 8px !important;
+}
