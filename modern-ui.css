@@ -216,3 +216,45 @@ body.fullscreen-enabled #titleBar {
   line-height: 1.2;
   color: rgba(255,255,255,0.74);
 }
+.agentDetails {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 32px !important;
+}
+
+.agentAvatar {
+  width: 120px !important;
+  height: 120px !important;
+  min-width: 120px !important;
+  min-height: 120px !important;
+  max-width: 120px !important;
+  max-height: 120px !important;
+
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  flex: 0 0 120px !important;
+
+  border: 3px solid rgba(255,255,255,0.22) !important;
+  background: rgba(255,255,255,0.08) !important;
+}
+
+.agentAvatar > img {
+  display: block !important;
+  width: 120px !important;
+  height: 120px !important;
+  max-width: none !important;
+  max-height: none !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  transform: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
