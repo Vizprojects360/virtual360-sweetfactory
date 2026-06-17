@@ -114,3 +114,39 @@ body.fullscreen-enabled #titleBar {
   top: 8px !important;
   right: 8px !important;
 }
+#vizFooter {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20000;
+}
+
+#vizFooter a {
+  display: block;
+  padding: 8px 16px;
+
+  background: rgba(18,18,18,0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+
+  transition: all 0.2s ease;
+}
+
+#vizFooter a:hover {
+  color: #ffffff;
+  background: rgba(18,18,18,0.75);
+}
+
+#vizFooter strong {
+  font-weight: 700;
+  color: white;
+}
