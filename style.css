@@ -893,7 +893,7 @@ body.view-control-buttons .viewControlButton {
   font-size: 17px;
   margin: 0 auto 36px auto;
   padding-top: 30px;
-  border-top: 1px solid rgba(0,0,0,0.12);
+  border-top: 1px solid rgba(255,255,255,0.1);
   max-width: 420px;
 }
 
@@ -903,7 +903,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 .agentDetails span {
-  opacity: 0.72;
+color: rgba(255,255,255,0.75);
 }
 
 #startTour {
@@ -935,8 +935,8 @@ body.view-control-buttons .viewControlButton {
     font-size: 36px;
   }
 
-  #startTour {
-    width: 100%;
-    min-width: 0;
+#startTour {
+  background: white;
+  color: #111;
   }
 }
