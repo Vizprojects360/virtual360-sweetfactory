@@ -939,7 +939,8 @@ body.view-control-buttons .viewControlButton {
     padding: 32px;
   }
 
-  .splashContent h1 {
-    font-size: 32px;
+.splashCard h1 {
+  font-size: 34px;
+  line-height: 1.15;
   }
 }
