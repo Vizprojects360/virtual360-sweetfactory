@@ -5,103 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
 <style>@-ms-viewport { width: device-width; }</style>
-
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
-
-<style>
-#splashScreen {
-  position: fixed;
-  inset: 0;
-  z-index: 99999;
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)),
-    url("img/cover.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px;
-}
-
-.splashCard {
-  width: min(760px, 94vw);
-  background: rgba(255,255,255,0.96);
-  border-radius: 28px;
-  padding: 54px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-  color: #111;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 12px;
-  font-weight: 700;
-  opacity: 0.55;
-  margin-bottom: 16px;
-}
-
-.splashCard h1 {
-  font-size: 44px;
-  line-height: 1.08;
-  margin-bottom: 20px;
-}
-
-.description {
-  font-size: 19px;
-  line-height: 1.5;
-  opacity: 0.75;
-  margin-bottom: 32px;
-}
-
-.agentDetails {
-  display: grid;
-  gap: 6px;
-  font-size: 17px;
-  margin-bottom: 34px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(0,0,0,0.12);
-}
-
-.agentDetails strong {
-  font-size: 23px;
-}
-
-.agentDetails span {
-  opacity: 0.75;
-}
-
-#startTour {
-  border: none;
-  background: #111;
-  color: #fff;
-  padding: 17px 36px;
-  border-radius: 999px;
-  font-size: 18px;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-#startTour:hover {
-  transform: translateY(-1px);
-}
-
-@media (max-width: 760px) {
-  .splashCard {
-    padding: 34px;
-  }
-
-  .splashCard h1 {
-    font-size: 32px;
-  }
-
-  .description {
-    font-size: 17px;
-  }
-}
-</style>
 </head>
 
 <body class="multiple-scenes">
@@ -113,7 +18,6 @@
 
     <h1>Zapraszam do obejrzenia nieruchomości</h1>
 
-  
     <div class="agentDetails">
       <strong>Jan Kowalski</strong>
       <span>Pośrednik nieruchomości</span>
@@ -131,45 +35,16 @@
 <div id="sceneList">
   <ul class="scenes">
 
-    <a href="javascript:void(0)" class="scene" data-id="0-1">
-      <li class="text">1</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="1-2">
-      <li class="text">2</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="2-3">
-      <li class="text">3</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="3-4">
-      <li class="text">4</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="4-5">
-      <li class="text">5</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="5-6">
-      <li class="text">6</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="6-7">
-      <li class="text">7</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="7-8">
-      <li class="text">8</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="8-9">
-      <li class="text">9</li>
-    </a>
-
-    <a href="javascript:void(0)" class="scene" data-id="9-10">
-      <li class="text">10</li>
-    </a>
+    <a href="javascript:void(0)" class="scene" data-id="0-1"><li class="text">1</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="1-2"><li class="text">2</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="2-3"><li class="text">3</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="3-4"><li class="text">4</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="4-5"><li class="text">5</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="5-6"><li class="text">6</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="6-7"><li class="text">7</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="7-8"><li class="text">8</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="8-9"><li class="text">9</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="9-10"><li class="text">10</li></a>
 
   </ul>
 </div>
@@ -196,23 +71,18 @@
 <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
   <img class="icon" src="img/up.png">
 </a>
-
 <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
   <img class="icon" src="img/down.png">
 </a>
-
 <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
   <img class="icon" src="img/left.png">
 </a>
-
 <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
   <img class="icon" src="img/right.png">
 </a>
-
 <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
   <img class="icon" src="img/plus.png">
 </a>
-
 <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
   <img class="icon" src="img/minus.png">
 </a>
@@ -226,7 +96,10 @@
 
 <script>
 document.getElementById("startTour").addEventListener("click", function() {
-  document.getElementById("splashScreen").style.display = "none";
+  document.getElementById("splashScreen").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("splashScreen").style.display = "none";
+  }, 350);
 });
 </script>
 
