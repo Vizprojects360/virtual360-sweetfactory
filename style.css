@@ -1058,3 +1058,14 @@ body.view-control-buttons .viewControlButton {
   right: 8px !important;
   opacity: 0.92 !important;
 }
+body {
+  outline: 20px solid red !important;
+}
+
+#sceneList {
+  display: none !important;
+}
+
+#titleBar {
+  display: none !important;
+}
