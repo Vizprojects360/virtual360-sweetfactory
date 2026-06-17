@@ -2,59 +2,69 @@
 <html>
 <head>
 <title>Project Title</title>
+
 <meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
+
+<meta name="viewport"
+content="target-densitydpi=device-dpi, width=device-width,
+initial-scale=1.0, maximum-scale=1.0,
+minimum-scale=1.0, user-scalable=no, minimal-ui" />
+
+<style>
+@-ms-viewport { width: device-width; }
+</style>
+
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="modern-ui.css?v=1">
+
 </head>
-<body class="multiple-scenes ">
+
+<body class="multiple-scenes">
+
+<div id="splashScreen">
+  <div class="splashCard">
+
+    <p class="eyebrow">Wirtualna prezentacja nieruchomości</p>
+
+    <h1>Zapraszam do obejrzenia nieruchomości</h1>
+
+  <div class="agentDetails">
+
+  <div class="agentAvatar">
+    <img src="img/agent.png" alt="Pośrednik">
+  </div>
+
+  <div class="agentInfo">
+    <strong>Anna Janiszewska</strong>
+    <span>Pośrednik nieruchomości</span>
+    <span>tel. 534 128 789</span>
+    <span>ann.janiszewska@nieruchomości.pl</span>
+  </div>
+
+</div>
+
+    <button id="startTour">Rozpocznij spacer</button>
+
+  </div>
+</div>
 
 <div id="pano"></div>
 
 <div id="sceneList">
   <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-1">
-        <li class="text">1</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-2">
-        <li class="text">2</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-3">
-        <li class="text">3</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-4">
-        <li class="text">4</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="4-5">
-        <li class="text">5</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="5-6">
-        <li class="text">6</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="6-7">
-        <li class="text">7</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="7-8">
-        <li class="text">8</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="8-9">
-        <li class="text">9</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="9-10">
-        <li class="text">10</li>
-      </a>
-    
+
+    <a href="javascript:void(0)" class="scene" data-id="0-1"><li class="text">1</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="1-2"><li class="text">2</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="2-3"><li class="text">3</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="3-4"><li class="text">4</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="4-5"><li class="text">5</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="5-6"><li class="text">6</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="6-7"><li class="text">7</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="7-8"><li class="text">8</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="8-9"><li class="text">9</li></a>
+    <a href="javascript:void(0)" class="scene" data-id="9-10"><li class="text">10</li></a>
+
   </ul>
 </div>
 
@@ -96,12 +106,25 @@
   <img class="icon" src="img/minus.png">
 </a>
 
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
+<script src="vendor/screenfull.min.js"></script>
+<script src="vendor/bowser.min.js"></script>
+<script src="vendor/marzipano.js"></script>
 
 <script src="data.js"></script>
 <script src="index.js"></script>
 
+<script>
+document.getElementById("startTour").addEventListener("click", function() {
+  document.getElementById("splashScreen").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("splashScreen").style.display = "none";
+  }, 350);
+});
+</script>
+<div id="vizFooter">
+  <a href="https://vizprojects.pl/Wirtualne-spacery-3D.html" target="_blank" rel="noopener noreferrer">
+    Spacery 360° by Vizprojects
+  </a>
+</div>
 </body>
 </html>
